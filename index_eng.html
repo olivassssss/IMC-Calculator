@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="index_eng.html" title=""><img src="assets/img/GB.png"></a>
+      <a href="index.html" title=""><img src="assets/img/PT.png"></a>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>IMC Calculator</h1>
+    <div class="row">
+      <ul class="left-side">
+        <h3>IMC</h3>
+        <li>Less then 18,5</li>
+        <li>Between 18,5 and 24,9</li>
+        <li>Between 25 and 29,9</li>
+        <li>Between 30 and 34,9</li>
+        <li>Between 35 and 39,9</li>
+        <li>More then 40</li>
+
+      </ul>
+      <ul class="right-side">
+        <h3>Results</h3>
+        <li>Underweight</li>
+        <li>Normal weight</li>
+        <li>Overweight</li>
+        <li>Obesity grade I</li>
+        <li>Obesity grade II</li>
+        <li>Obesity grade III</li>
+      </ul>
+    </div>
+
+    <form id="formulario" action="" method="post">
+      <label for="peso">Weight (between 20kg and 500kg)</label>
+      <input type="number" id="peso" name="peso">
+
+      <label for="altura">Height (in meters more then 1.00)</label>
+      <input type="text" id="altura" name="altura">
+
+      <button type="submit">Result</button>
+    </form>
+    <div id="resultado"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
